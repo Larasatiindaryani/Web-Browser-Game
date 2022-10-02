@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+<html xmlns="http://www.w3.org/1999/xhtml&quot; xml:lang="en" lang="en">
+
+
+<head>
+<title>responsive</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="generator" content="Geany 1.36" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.column {
+  float: left;
+  width: 33.33%;
+}
+img {display: block; margin: 0 auto;}
+button {
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.column2 {
+  float: right;
+  width: 66.6%;
+  margin:0 0 0 0;
+  padding: 5 6 7 8 ;
+}
+.baris:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.blue_card{
+    background-color: rgb(32, 48, 58);
+}
+.green_card{
+    background-color: rgb(233, 230, 85);
+    animation-name: gantiw;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+}
+@keyframes gantiw{
+  0%{background-color: rgb(233, 231, 124);}
+  25%{background-color: rgb(142, 243, 209);}
+  50%{background-color: rgb(178, 172, 236);}
+  75%{background-color: rgb(231, 163, 163);}
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+
+<body>
+<div class="container" >
+    <h1>HIMA</h1>
+<div class="baris">  <!-- baris 1 -->
+<!-- kotak biru dan hijau -->
+<div class="blue_card column"><picture>
+    <source 
+      media="(min-width: 1200px)"
+      srcset="Image/Original/9.jpg" width="450px"
+      alt="full badan">
+    <source
+      media="(min-width:800px)" 
+      srcset="Image/rounded/9.png" width="350"
+      alt="pas foto">
+    <image 
+      media="(min-width: 400px)"
+      srcset="Image/circle/9.png" width="300px" 
+      alt="separuh badan">
+    
+  </picture></div>
+<div class="green_card column2">
+    <h1>BIO DATA</h1>
+    <ul>
+        <li>Nama    : Nurul Ikhsan</li>
+        <li>Jabatan : Ketua Divisi Keagamaan</li>
+        <li>Tempat, tanggal lahir    : Jombang, 20 Juni 2000</li>
+        <li>Alamat    : Jombang</li>
+    </ul></li>
+    <h3>SOCIAL MEDIA</h3>
+    <li>Instagram   = @nrl***</li>
+</ul>
+</div>
+</div>
+<div></div>
+<a href="hima8.html"><button><< Previous</button></a>
+<a href="Index.html">Home</a>
+<a href="hima10.html"><button>Next >></button></a>
+</div>
+</body>
+
+
+</html>
